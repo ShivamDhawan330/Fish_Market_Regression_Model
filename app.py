@@ -63,4 +63,5 @@ def run_model(filename):
 if __name__ == '__main__':
     # Create uploads directory if not exists
     os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
+    
