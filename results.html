@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Model Results</h1>
+        <div class="results">
+            <p>Mean Absolute Error (MAE): {{ mae }}</p>
+            <p>Mean Squared Error (MSE): {{ mse }}</p>
+            <p>R-squared Score (R²): {{ r2 }}</p>
+        </div>
+        <a href="/">Upload Another File</a>
+    </div>
+</body>
+</html>
